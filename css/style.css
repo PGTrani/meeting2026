@@ -1,0 +1,227 @@
+/* ============================================================
+   MeTeenGo - XIX Meeting Giovanissimi 2026
+   ============================================================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-navy: #1a3a5c;
+  --color-blue: #2d6aa0;
+  --color-sky: #4a9fd9;
+  --color-light: #e8f1f8;
+  --color-white: #ffffff;
+  --color-note: #2d6aa0;
+  --color-form: #1a7a4e;
+  --color-contest: #b8860b;
+  --font: 'Nunito', system-ui, -apple-system, sans-serif;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--color-navy);
+  background: linear-gradient(160deg, var(--color-light) 0%, var(--color-white) 40%, var(--color-light) 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ---------- Header ---------- */
+
+.header {
+  width: 100%;
+  padding: 1.25rem 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.header-logos {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+/* ---------- Main ---------- */
+
+.main {
+  flex: 1;
+  width: 100%;
+  max-width: 640px;
+  padding: 0 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  text-align: center;
+  padding: 2rem 0 2.5rem;
+}
+
+.hero-edition {
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--color-blue);
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: var(--color-navy);
+  line-height: 1.1;
+  margin: 0.15rem 0;
+  letter-spacing: -0.02em;
+}
+
+.hero-subtitle {
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--color-blue);
+  margin-bottom: 0.75rem;
+}
+
+.hero-theme {
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--color-navy);
+  margin-bottom: 1rem;
+}
+
+.hero-dates {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+  color: var(--color-blue);
+  font-weight: 700;
+}
+
+/* ---------- Action buttons ---------- */
+
+.actions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 2.5rem;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 1.75rem;
+  border-radius: 16px;
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 1.25rem;
+  font-weight: 700;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.action-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.action-btn:active {
+  transform: translateY(0);
+}
+
+.action-btn--note {
+  background: linear-gradient(135deg, var(--color-blue), var(--color-navy));
+}
+
+.action-btn--form {
+  background: linear-gradient(135deg, #2e9e5e, var(--color-form));
+}
+
+.action-btn--contest {
+  background: linear-gradient(135deg, #d4a017, var(--color-contest));
+}
+
+.action-icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.action-label {
+  flex: 1;
+}
+
+/* ---------- Footer ---------- */
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 1.5rem 1rem 2rem;
+  border-top: 1px solid rgba(26, 58, 92, 0.1);
+}
+
+.poster-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-blue);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid var(--color-blue);
+  border-radius: 8px;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.poster-link:hover {
+  background: var(--color-blue);
+  color: var(--color-white);
+}
+
+.poster-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.footer-credits {
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  color: rgba(26, 58, 92, 0.5);
+}
+
+/* ---------- Responsive ---------- */
+
+@media (min-width: 480px) {
+  .logo {
+    height: 72px;
+  }
+
+  .hero-title {
+    font-size: 4.5rem;
+  }
+}
