@@ -4,7 +4,18 @@
       "Bash(ls:*)",
       "Bash(cp:*)",
       "Bash(npm install:*)",
-      "Bash(npx webpack:*)"
+      "Bash(npx webpack:*)",
+      "WebFetch(domain:www.incomunione.it)",
+      "WebSearch",
+      "WebFetch(domain:www.arcidiocesitrani.it)",
+      "Bash(python3 -c \"import pdfplumber; print\\('pdfplumber ok'\\)\")",
+      "Bash(python3 -c \"import pypdf; print\\('pypdf ok'\\)\")",
+      "Bash(python3 -c \"import PyPDF2; print\\('PyPDF2 ok'\\)\")",
+      "Bash(pip3 install:*)",
+      "Bash(python3:*)",
+      "Read(//Users/AndreaValenziano/IdeaProjects/**)",
+      "Bash(tesseract --version)",
+      "Bash(brew install:*)"
     ]
   }
 }

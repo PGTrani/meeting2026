@@ -19,6 +19,8 @@
   --color-note: #2d6aa0;
   --color-form: #1a7a4e;
   --color-contest: #b8860b;
+  --color-messa: #6b3fa0;
+  --color-video: #b83232;
   --font: 'Nunito', system-ui, -apple-system, sans-serif;
 }
 
@@ -164,6 +166,14 @@ body {
   background: linear-gradient(135deg, #d4a017, var(--color-contest));
 }
 
+.action-btn--messa {
+  background: linear-gradient(135deg, #8b5cc7, var(--color-messa));
+}
+
+.action-btn--video {
+  background: linear-gradient(135deg, #e05555, var(--color-video));
+}
+
 .action-icon {
   width: 32px;
   height: 32px;
@@ -200,6 +210,28 @@ body {
   width: 40px;
   height: 40px;
   object-fit: contain;
+}
+
+/* ---------- Back link ---------- */
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--color-blue);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid var(--color-blue);
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.back-link:hover {
+  background: var(--color-blue);
+  color: var(--color-white);
 }
 
 /* ---------- Footer ---------- */
